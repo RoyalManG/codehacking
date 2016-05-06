@@ -4,6 +4,12 @@
 
     <h1>Users</h1>
 
+    @if(Session::has('deleted_user'))
+        <div class="alert alert-success">
+            <p>{{session('deleted_user')}}</p>
+        </div>
+    @endif
+
     <table class="table">
         <thead>
             <tr>
